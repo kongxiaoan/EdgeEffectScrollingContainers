@@ -1,6 +1,8 @@
 package me.kpa.edgeeffect
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +17,40 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+        findViewById<View>(R.id.recyclerSimple).setOnClickListener { v: View? ->
+            startActivity(
+                Intent(
+                    this@MainActivity,
+                    SimpleRecyclerActivity::class.java
+                )
+            )
+        }
+
+        findViewById<View>(R.id.viewPagerSimple).setOnClickListener { v: View? ->
+            startActivity(
+                Intent(
+                    this@MainActivity,
+                    SimpleViewPager2MainActivity::class.java
+                )
+            )
+        }
+
+        findViewById<View>(R.id.scrollViewSimple).setOnClickListener { v: View? ->
+            startActivity(
+                Intent(
+                    this@MainActivity,
+                    SimpleScrollViewMainActivity::class.java
+                )
+            )
+        }
+        findViewById<View>(R.id.scrollViewSimple1).setOnClickListener { v: View? ->
+            startActivity(
+                Intent(
+                    this@MainActivity,
+                    SimpleScrollView1Activity::class.java
+                )
+            )
         }
     }
 }

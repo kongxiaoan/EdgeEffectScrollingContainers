@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "EdgeEffectScrollingContainers"
 include(":app")
- 
+include(":EdgeEffect")

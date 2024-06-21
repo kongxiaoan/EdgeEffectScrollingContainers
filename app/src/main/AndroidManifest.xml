@@ -13,6 +13,9 @@
         android:theme="@style/Theme.EdgeEffectScrollingContainers"
         tools:targetApi="31">
         <activity
+            android:name=".SimpleScrollView1Activity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -21,6 +24,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SimpleRecyclerActivity" />
+        <activity android:name=".SimpleScrollViewMainActivity" />
+        <activity android:name=".SimpleViewPager2MainActivity" />
     </application>
 
 </manifest>
